@@ -6,8 +6,9 @@ body {
     margin: 0;
     font-family: 'roboto', sans-serif;
     font-family: 'Caveat', cursive;
-    background-image: url(https://img.freepik.com/foto-gratis/confeti-estrella-brillante-sobre-fondo-acuarela-pastel-abstracto-colorido_53876-98173.jpg?w=2000);
+    background-image: url(../img/fondo4.webp);
     background-attachment: fixed;
+    background-size: cover;
     
 }
 
