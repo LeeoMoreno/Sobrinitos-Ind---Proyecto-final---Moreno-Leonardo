@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    font-family: 'Caveat', cursive;
+    background-image: url(https://img.freepik.com/foto-gratis/confeti-estrella-brillante-sobre-fondo-acuarela-pastel-abstracto-colorido_53876-98173.jpg?w=2000);
+    background-attachment: fixed;
+    
+}
+
+header {
+    position:sticky;
+    top: 0;
+    z-index: 2;
+}
+
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+
+.contenedorEstilo{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+    background-color: #c7f9cc;
+}
+
+header .logo {
+    margin: 0;
+    padding: 10px 10px 5px 10px;
+    font-weight: bold;
+    color: #38a3a5;
+    font-size: 2.6em;
+}
+
+header .contenedorEstilo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header nav .navMio{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: end; 
+    */
+    text-align: right;
+    padding-bottom: 5px;
+
+
+}
+
+header a{
+    padding: 5px 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: #38a3a5;
+}
+
+.ofertasDestacadas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/oferta-destacada.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+.ofertasDestacadas h1{
+    color: black;
+}
+
+.otoñoInvierno .contenedorEstilo{
+   text-align: center;
+   padding: 100px 12px;
+}
+
+.primaveraVerano .contenedorEstilo{
+    text-align: center;
+    padding: 100px 12px;
+ }
+
+ .nuestasCategorias {
+    /* background-color: rgb(30,30,30); */
+    /* color: white; */
+    text-align: center;
+    align-items: center;
+}
+
+.nuestasCategorias .contenedorEstilo {
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 100px;
+}
+
+.titulosCategorias {
+    padding: 30px;
+}
+
+.nuestasCategorias h2 {
+    padding-top: 100px;
+}
+
+ .nuestasCategorias h3{
+    margin-top: 0;
+ }
+
+ .nuestrosProductos  .contenedorEstilo{
+    text-align: center;
+    padding: 100px 12px 50px 12px;
+}
+
+div img {
+    margin:5px auto;
+    display:block;
+    max-width: 80%;
+} 
+
+footer {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/* PAGINA PRODUCTOS */
+
+.precioProductos {
+    text-align: center;
+    font-weight: bold;
+}
+
+.nuestrosProductosH1 {
+    text-align: center;
+    padding: 50px;
+    text-decoration-line: underline;
+}
+
+/* Pagina contacto */
+
+.logoRedesSociales {
+    width: 70px;
+}
+
+.formularioContacto {
+    border: #00BBF9 double 5px;
+    padding: 15px;
+    border-radius: 80px;
+}
+
+/* PAGINA INFORMACION */
+
+.contenedorVideo {
+    width: 70%;
+}
