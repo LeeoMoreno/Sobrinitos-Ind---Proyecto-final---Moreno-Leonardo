@@ -19,12 +19,16 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
     </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <section class="contenedorPadre">
         <header>
-
+<!-- 
             <div class="contenedorEstilo contenedorNav">
                 <div divLogo>
                     
@@ -39,7 +43,24 @@
                         <a href="paages/contacto.htmal">Contacto</a>
                     </nav>
                 </div>
-            </div>
+            </div> -->
+
+            <div class="container">
+                <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                    <span class="fs-3 logoEscrito">Sobrinitos Ind</span>
+                  </a>
+            
+                  <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+                    <li class="nav-item"><a href="pages/productos.html" class="nav-link">Productos</a></li>
+                    <li class="nav-item"><a href="pages/informacion.html" class="nav-link">Informacion</a></li>
+                    <li class="nav-item"><a href="pages/informacion.html" class="nav-link">Ayuda</a></li>
+                    <li class="nav-item"><a href="pages/ayuda.html" class="nav-link">Contacto</a></li>
+                  </ul>
+                </header>
+              </div>
         </header>
 
 
@@ -48,6 +69,9 @@
 
             <div class="contenedorEstilo">
                 <div data-aos="zoom-in">
+                    <div class="logoHero">
+                        <img src="img/Sobrinitos Ind-modified.png">
+                    </div>
                     <h1>Lo mejor en indumentaria para los mas chicos</h1>
 
                 </div>
@@ -84,7 +108,7 @@
 
             <h2>Nuestras Categorias</h2>
 
-            <div class="container text-center">
+            <!-- <div class="container text-center">
                 <div class="row">
                     <div class="col">
                         <h3 class="titulosCategorias">Para ellos</h3>
@@ -116,7 +140,54 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
+            <div id="carouselExampleCaptions" class="carousel slide contenedorCarrusel" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/categoriaBebes.jpg" class="d-block w-100" alt="Categoria bebés">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Bebés</h3>
+                      <p>Los mejores conjuntos para los bebés de la casa.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/categoriaNiñas.jpg" class="d-block w-100" alt="Categoria niñas">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Niñas</h3>
+                      <p>La mejor indumentaria a la moda para ellas.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/categoriaNiños.jpg" class="d-block w-100" alt="Categoria niños">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Niños</h3>
+                      <p>Lo ultimo en moda para ellos.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/categoriaTeens.jpg" class="d-block w-100" alt="Categoria niños">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Teens</h3>
+                      <p>Los mejores outfits para estar siempre a la moda.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
 
         <section class="nuestrosProductos">
