@@ -22,11 +22,11 @@ h1 {font-size: 2.5em;
     font-family: 'Coiny', cursive;
 }
 
-h2 {font-size: 2.7em;
+h2 {font-size: 2em;
     font-family: 'Coiny', cursive;
 }
 
-h3 {font-size: 2em;
+h3 {font-size: 1.7em;
     font-family: 'Coiny', cursive;
 }
 
@@ -42,6 +42,10 @@ header {
     background-color: #f9dcc4;
 }
 
+.navbar-collapse {
+    flex-grow: unset;
+}
+
 header .logo {
     /* margin: 0;
     padding: 10px 10px 5px 10px;
@@ -52,6 +56,7 @@ header .logo {
 
 .logoEscrito {
     font-family: 'Coiny', cursive;
+    color: black;
 
 }
 
@@ -79,12 +84,9 @@ header nav .navMio{
 
 }
 
-.nav-pills .nav-link.active {
-    background-color: #6d6875;
-}
-
 .nav-link {
     color: #b5838d;
+    font-size: 1.3em;
 }
 
 header a{
@@ -154,9 +156,13 @@ header a:hover {
 } */
 
 .contenedorCarrusel {
-    max-width: 30%;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.letrasCarrusel {
+/* color: #f4a261; */
 }
 
 .titulosCategorias {
