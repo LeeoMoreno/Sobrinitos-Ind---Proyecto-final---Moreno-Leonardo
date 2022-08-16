@@ -1,226 +1,149 @@
-*{
-    box-sizing: border-box;
-}
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
 
 body {
-    margin: 0;
-    font-family: 'roboto', sans-serif;
-    font-family: 'Caveat', cursive;
-    background-image: url(../img/fondo4.webp);
-    background-attachment: fixed;
-    background-size: cover;
-    
-}
+  margin: 0;
+  font-family: 'roboto', sans-serif;
+  font-family: 'Caveat', cursive;
+  background-image: url(../img/fondo4.webp);
+  background-attachment: fixed;
+  background-size: cover; }
+
+h1 {
+  font-size: 2.5em;
+  font-family: 'Coiny', cursive; }
+
+h2 {
+  font-size: 2em;
+  font-family: 'Coiny', cursive; }
+
+h3 {
+  font-size: 1.7em;
+  font-family: 'Coiny', cursive; }
+
+p {
+  font-size: 1.25em; }
 
 header {
-    position:sticky;
-    top: 0;
-    z-index: 2;
-}
-
-h1 {font-size: 2.5em; 
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: whitesmoke;
+  background-color: #f9dcc4; }
+  header .logoEscrito {
     font-family: 'Coiny', cursive;
-}
-
-h2 {font-size: 2em;
-    font-family: 'Coiny', cursive;
-}
-
-h3 {font-size: 1.7em;
-    font-family: 'Coiny', cursive;
-}
-
-p {font-size: 1.25em;}
-
-.contenedorEstilo{
-    max-width: 1400px;
-    margin: auto;
-}
-
-header {
-    background-color: rgb(245, 245, 245);
-    background-color: #f9dcc4;
-}
-
-.navbar-collapse {
-    flex-grow: unset;
-}
-
-header .logo {
-    /* margin: 0;
-    padding: 10px 10px 5px 10px;
-    font-weight: bold;
-    color: #38a3a5;
-    font-size: 2.6em; */
-}
-
-.logoEscrito {
-    font-family: 'Coiny', cursive;
-    color: black;
-
-}
-
-.logoHero {
-    max-width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header .contenedorEstilo{
+    color: black; }
+  header .navbar-collapse {
+    flex-grow: unset; }
+  header .contenedorEstilo {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-
-header nav .navMio{
-    /* display: flex;
-    flex-direction: row;
-    justify-content: end; 
-    */
-    text-align: right;
-    padding-bottom: 5px;
-
-
-}
-
-.nav-link {
+    align-items: center; }
+  header nav .nav-link {
     color: #b5838d;
-    font-size: 1.3em;
-}
-
-header a{
+    font-size: 1.3em; }
+  header a {
     padding: 5px 8px;
     text-decoration: none;
     font-weight: bold;
-    color: black;
-}
+    color: black; }
 
-header a:hover {
-    color: #38a3a5;
-}
+.contenedorEstilo {
+  max-width: 1400px;
+  margin: auto; }
 
 .ofertasDestacadas {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 70vh;
-    color: white;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url(../img/oferta-destacada.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center center;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/oferta-destacada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .ofertasDestacadas .logoHero {
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto; }
+  .ofertasDestacadas h1 {
+    color: #f9dcc4; }
 
-.ofertasDestacadas h1{
-    color: #f9dcc4;
-}
+.otoñoInvierno .contenedorEstilo {
+  text-align: center;
+  padding: 100px 12px; }
 
-.otoñoInvierno .contenedorEstilo{
-   text-align: center;
-   padding: 100px 12px;
-}
+.primaveraVerano .contenedorEstilo {
+  text-align: center;
+  padding: 100px 12px; }
 
-.primaveraVerano .contenedorEstilo{
-    text-align: center;
-    padding: 100px 12px;
- }
-
- .nuestasCategorias {
-    /* background-color: rgb(30,30,30); */
-    /* color: white; */
-    text-align: center;
-    align-items: center;
-}
-
-.nuestasCategorias .contenedorEstilo {
+.nuestasCategorias {
+  text-align: center;
+  align-items: center; }
+  .nuestasCategorias .contenedorEstilo {
     padding: 100px 0;
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr;
-    gap: 100px;
-}
-
-/* .carousel {
-    max-height: 0%;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-} */
+    gap: 100px; }
+  .nuestasCategorias h2 {
+    padding-top: 100px; }
+  .nuestasCategorias h3 {
+    margin-top: 0; }
 
 .contenedorCarrusel {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.letrasCarrusel {
-/* color: #f4a261; */
-}
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .titulosCategorias {
-    padding: 30px;
-}
+  padding: 30px; }
 
-.nuestasCategorias h2 {
-    padding-top: 100px;
-}
-
- .nuestasCategorias h3{
-    margin-top: 0;
- }
-
- .nuestrosProductos  .contenedorEstilo{
-    text-align: center;
-    padding: 100px 12px 50px 12px;
-}
+.nuestrosProductos .contenedorEstilo {
+  text-align: center;
+  padding: 100px 12px 50px 12px; }
 
 div img {
-    margin:5px auto;
-    display:block;
-    max-width: 80%;
-} 
+  margin: 5px auto;
+  display: block;
+  max-width: 80%; }
 
 footer {
-    font-size: 0.7rem;
-    text-align: center;
-}
+  font-size: 0.7rem;
+  text-align: center; }
 
 /* PAGINA PRODUCTOS */
-
 .precioProductos {
-    text-align: center;
-    font-weight: bold;
-}
+  text-align: center;
+  font-weight: bold; }
 
 .nuestrosProductosH1 {
-    text-align: center;
-    padding: 50px;
-    text-decoration-line: underline;
-}
+  text-align: center;
+  padding: 50px;
+  text-decoration-line: underline; }
 
 /* Pagina contacto */
-
 .logoRedesSociales {
-    width: 70px;
-}
+  width: 70px; }
 
 .formularioContacto {
-    border: #f9dcc4 double 10px;
-    padding: 15px;
-    border-radius: 20px;
-    max-width: 65%;
-}
+  border: #f9dcc4 double 10px;
+  padding: 15px;
+  border-radius: 20px;
+  max-width: 65%; }
 
 /* PAGINA INFORMACION */
-
 .contenedorVideo {
-    width: 70%;
-}
+  width: 70%; }
+
+/*Pagina Ayuda */
+.pedidosMinMay {
+  margin-top: 60px; }
+  .pedidosMinMay .pedidosMinMay h3 {
+    text-align: center; }
+
+.mediosPagoEnvio {
+  margin-top: 60px; }

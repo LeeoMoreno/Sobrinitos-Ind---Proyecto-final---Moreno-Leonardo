@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    font-family: 'Caveat', cursive;
+    background-image: url(../img/fondo4.webp);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {font-size: 2.5em; 
+    font-family: 'Coiny', cursive;
+}
+
+h2 {font-size: 2em;
+    font-family: 'Coiny', cursive;
+}
+
+h3 {font-size: 1.7em;
+    font-family: 'Coiny', cursive;
+}
+
+p {font-size: 1.25em;}
+
+header{
+    position:sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(245, 245, 245);
+    background-color: #f9dcc4;
+
+    .logoEscrito {
+        font-family: 'Coiny', cursive;
+        color: black;
+    }
+    
+    .navbar-collapse {
+        flex-grow: unset;
+    }
+
+    .contenedorEstilo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        .nav-link {
+            color: #b5838d;
+            font-size: 1.3em;  
+        }
+    }
+
+    a{
+        padding: 5px 8px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+}
+
+.contenedorEstilo{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.ofertasDestacadas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/oferta-destacada.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+
+    .logoHero {
+        max-width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1{
+        color: #f9dcc4;
+    }    
+
+}
+
+.otoñoInvierno { 
+    .contenedorEstilo{
+    text-align: center;
+    padding: 100px 12px;
+    }
+
+}
+
+.primaveraVerano {
+    .contenedorEstilo{
+        text-align: center;
+        padding: 100px 12px;
+        }
+}
+
+.nuestasCategorias {
+    text-align: center;
+    align-items: center;
+
+    .contenedorEstilo {
+        padding: 100px 0;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        gap: 100px;
+    }
+
+    h2 {
+        padding-top: 100px;
+    }
+
+    h3{
+        margin-top: 0;
+     }
+}
+
+.contenedorCarrusel {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulosCategorias {
+    padding: 30px;
+}
+
+.nuestrosProductos  {
+    .contenedorEstilo{
+    text-align: center;
+    padding: 100px 12px 50px 12px;
+    }
+}
+
+div img {
+    margin:5px auto;
+    display:block;
+    max-width: 80%;
+} 
+
+footer {
+    font-size: 0.7rem;
+    text-align: center;
+} 
+
+/* PAGINA PRODUCTOS */
+
+.precioProductos {
+    text-align: center;
+    font-weight: bold;
+}
+
+.nuestrosProductosH1 {
+    text-align: center;
+    padding: 50px;
+    text-decoration-line: underline;
+}
+
+/* Pagina contacto */
+
+.logoRedesSociales {
+    width: 70px;
+}
+
+.formularioContacto {
+    border: #f9dcc4 double 10px;
+    padding: 15px;
+    border-radius: 20px;
+    max-width: 65%;
+}
+
+/* PAGINA INFORMACION */
+
+.contenedorVideo {
+    width: 70%;
+}
+
+/*Pagina Ayuda */
+.pedidosMinMay {
+    margin-top: 60px;
+
+    .pedidosMinMay h3 {
+        text-align: center;
+    }
+}
+
+.mediosPagoEnvio {
+    margin-top: 60px;
+}
