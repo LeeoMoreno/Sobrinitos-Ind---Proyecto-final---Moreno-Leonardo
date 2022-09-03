@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobrinitos Ind</title>
+    <title>Sobrinitos Ind - Informacion</title>
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -26,20 +26,8 @@
 </head>
 
 <body>
-    <section class="contenedorPadre">
         <header>
-            <!-- <div class="contenedorEstilo contenedorNav">
-                <p class="logo">Sobrinitos Ind</p>
-                <nav>
-                    <a href="../index.html">Inicio</a>
-                    <a href="productos.html">Productos</a>
-                    <a href="informacion.html">Informacion</a>
-                    <a href="ayuda.html">Ayuda</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div> -->
-
-            <nav class="navbar navbar-expand-md navbar-dark " aria-label="Fourth navbar example">
+            <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
                 <div class="container-fluid">
                     <a class="navbar-brand logoEscrito" href="../index.html">Sobrinitos Ind</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,9 +41,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="productos.html">Productos</a>
-                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Productos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="productos.html">Todos los productos</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="productos-bebes.html">Bebés</a></li>
+                                    <li><a class="dropdown-item" href="productos-nenas.html">Nenas</a></li>
+                                    <li><a class="dropdown-item" href="productos-nenes.html">Nenes</a></li>
+                                </ul>
                             <li class="nav-item">
                                 <a class="nav-link" href="informacion.html">Informacion</a>
                             </li>
@@ -73,7 +68,7 @@
         </header>
 
 
-        <h1 class="nuestrosProductosH1">Acerca de nosotros</h1>
+        <h1 class="nuestrosProductosH1" data-aos="fade-up" data-aos-duration="3000">Acerca de nosotros</h1>
 
         <div class="container text-center">
             <div class="row">
@@ -87,13 +82,11 @@
                 </div>
             </div>
         </div>
-        <br><br>
+        
         <div class="container text-center">
             <div class="row">
-                <div class="col">
-                    <div data-aos="fade-up" data-aos-duration="3000">
-                        <h2>Nuestros productos</h2>
-                    </div>
+                <div class="col nuestrosProductosMarginTop">
+                    <h2>Nuestros productos</h2>
                     <p>
                         Contamos con variedad de vestimenta para recien nacidos y hasta adolescentes. Todas nuestras
                         prendas son de calidad premium. Contamos con amplio stock en variedad de colores y talles. Los
@@ -102,8 +95,8 @@
                 </div>
             </div>
         </div>
-        <br><br>
-        <div class="container text-center">
+        
+        <div class="container text-center nuestrosProductosMarginTop">
             <div class="row">
                 <div class="col ">
                     <iframe class="contenedorVideo" width="560" height="315"
@@ -115,15 +108,15 @@
                 </div>
             </div>
         </div>
-        <br><br>
-        <div class="container text-center">
+       
+        <div class="container text-center nuestrosProductosMarginTop">
             <div class="row">
                 <div class="col">
                     <h3>De este modo es como se mide el talle para nuestros productos:</h3>
                 </div>
             </div>
         </div>
-        <br><br>
+       
         <div class="container text-center">
             <div class="row">
                 <div class="col">
@@ -132,9 +125,7 @@
             </div>
         </div>
 
-        <br><br>
-
-        <div class="container text-center">
+        <div class="container text-center nuestrosProductosMarginTop">
             <div class="row">
                 <div class="col-sm-12 col-xl-6">
                     <h3>Envios</h3>
@@ -153,7 +144,7 @@
             </div>
         </div>
 
-        <div class="container text-center">
+        <div class="container text-center nuestrosProductosMarginTop">
             <div class="row">
                 <div class="col">
                     <iframe class="contenedorVideo"
@@ -164,17 +155,23 @@
             </div>
         </div>
 
-        <div class="container footerP">
-            <footer class="py-5">
-                <div class="border-top">
-                    <p>&copy; Todos los derechos reservados.</p><p>Creador por Leo Moreno</p>
-
-                </div>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0 text-muted">&copy; Sobrinitos Ind - Moreno Leonardo 2022</p>
+          
+              <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+              </a>
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+                <li class="nav-item"><a href="productos.html" class="nav-link px-2 text-muted">Productos</a></li>
+                <li class="nav-item"><a href="informacion.html" class="nav-link px-2 text-muted">Información</a></li>
+                <li class="nav-item"><a href="ayuda.html" class="nav-link px-2 text-muted">Ayuda</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+              </ul>
             </footer>
         </div>
-
-
-    </section>
 
 
 

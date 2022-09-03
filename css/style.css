@@ -75,11 +75,8 @@ header {
   .ofertasDestacadas h1 {
     color: #f9dcc4; }
 
-.bannerOfertas {
-  width: calc(100% + 0.5px);
-  margin: 25px 0px; }
-
 .bannerEnviosPagos {
+  margin-top: 25px;
   width: calc(100% + 0.5px); }
 
 .otoñoInvierno .contenedorEstilo {
@@ -128,10 +125,6 @@ div img {
     color: #b5838d;
     font-size: 1.2em; }
 
-footer {
-  font-size: 0.7rem;
-  text-align: center; }
-
 /* PAGINA PRODUCTOS */
 .precioProductos {
   text-align: center;
@@ -142,17 +135,50 @@ footer {
   padding: 50px;
   text-decoration-line: underline; }
 
+.imagenProducto {
+  max-height: 232px;
+  max-width: 310px; }
+
+.botonComprar {
+  text-decoration: none;
+  color: black; }
+  .botonComprar:hover {
+    color: #b5838d; }
+
 /* Pagina contacto */
+.redesSocialesContacto {
+  margin-top: 100px; }
+
 .logoRedesSociales {
   width: 70px; }
 
 .formularioContacto {
+  margin-top: 100px;
   border: #f9dcc4 double 10px;
   padding: 15px;
   border-radius: 20px;
-  max-width: 65%; }
+  max-width: 90%; }
+
+label {
+  display: block;
+  margin: 0.5em 0; }
+
+input, textarea {
+  width: 50%;
+  display: block;
+  margin: 10px auto; }
+
+input[type="checkbox"] {
+  display: inline;
+  width: max-content; }
+
+.formularioDiv {
+  margin: 10px; }
 
 /* PAGINA INFORMACION */
+.nuestrosProductosMarginTop {
+  margin-top: 80px; }
+
 .contenedorVideo {
   width: 70%; }
 
@@ -161,6 +187,9 @@ footer {
   margin-top: 60px; }
   .pedidosMinMay h3 {
     text-align: center; }
+
+.pasosComoComprar {
+  text-align: start; }
 
 .mediosPagoEnvio {
   margin-top: 60px; }
